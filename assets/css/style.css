@@ -1,0 +1,293 @@
+* {
+    margin:0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+/* NAVBAR */
+
+.navbar-custom {
+    background-color: white;
+}
+
+.page-row .navbar {
+    height: 50px;
+    background-color: #f2f2f2;
+    border-color: #b3b3b3;
+}
+
+.brand-custom {
+    float: left;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+div.brand-custom a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.brand-text {
+    color: gray;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.navbar-text {
+    margin-top: -45px;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  border-top: solid 0.5pt;
+  border-color: #b3b3b3;
+}
+
+div.navbar-footer a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.signature {
+    color: #262626;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.icon {
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.icon img {
+    height: 20px;
+}
+
+/* PORTFOLIO TABLE */
+
+.portfolio-table {
+    background-color: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-table img {
+    height: 250px;
+    width: auto;
+    position: center;
+    margin-top: 5px;
+}
+
+.second-row {
+    margin-top: 0px;
+}
+
+.cross-row div {
+    /*background-color: blue;*/
+    height: 49px;
+}
+
+.bigrow div {
+    /*background-color: green;*/
+    height: 260px;
+}
+
+.before {
+    border-bottom: 1pt black solid;
+}
+
+.after {
+    border-bottom: 1pt black solid;
+}
+
+.upper {
+    border-right: 1pt black solid;
+}
+
+.realized {
+    border-right: 1pt black solid;
+    border-bottom: 1pt black solid;
+}
+
+.studio {
+    border-bottom: 1pt black solid;
+}
+
+.actual {
+    border-right: 1pt black solid;
+}
+
+/*HOVER EFFECT*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #999999;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0,0,0,0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+  padding: 10px;
+}
+
+.hovereffect h2:hover {
+    color: #696969;
+}
+
+div.overlay a:hover {
+    color: #999999 !important;
+    text-decoration: none;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+/* BODY CONTENT CATEGORY PAGES */
+
+.content-row div {
+    /*background-color: yellow;*/
+    height: 103px;
+}
+
+.right {
+    border-right: 1pt black solid;
+}
+
+.down {
+    border-bottom: 1pt black solid;
+}
+
+.content-row img {
+    height: 90px;
+    width: auto;
+}
+
+.content-row a {
+    color: black;
+}
+
+div.content-row a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.rp {
+    position: absolute;
+    align: right;
+    margin-top: 82px;
+    margin-left: 30px;
+}
+
+.ds {
+    position: absolute;
+    align: left;
+    margin-top: 82px;
+    margin-left: -12px;
+}
+
+.ap {
+    position: absolute;
+    align: right;
+    margin-top: 5px;
+    margin-left: 42px;
+}
+
+.gd {
+    position: absolute;
+    align: left;
+    margin-top: 5px;
+    margin-left: -12px;
+}
+
+/* CAROUSEL */
+
+.modal.and.carousel {
+    position: absolute;
+    margin-top: 0px;
+    background: linear-gradient(
+                     rgba(20,20,20, .8),
+                     rgba(20,20,20, .8));
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: grey;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+} /*SHADOW*/
